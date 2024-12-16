@@ -1,0 +1,52 @@
+{
+  "name": "@konfig/cli",
+  "version": "0.0.1",
+  "author": {
+    "name": "konfjs",
+    "url": "https://github.com/konfjs"
+  },
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/konfjs/konfig",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/konfjs/konfig.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/konfjs/konfig/issues"
+  },
+  "keywords": ["konfjs", "konfig", "projen", "cli"],
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "bin": {
+    "@konfig/cli": "./dist/index.js"
+  },
+  "scripts": {
+    "lint": "biome lint",
+    "add_shebang": "perl -i -pe 's,#!/usr/bin/env tsx,#!/usr/bin/env node,g' dist/index.js",
+    "build": "rm -rf dist && tsc && pnpm run add_shebang && chmod +x dist/index.js",
+    "prepack": "pnpm run build"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "typescript": "5.7.2"
+  },
+  "dependencies": {
+    "picocolors": "^1.1.1",
+    "yaml": "^2.6.1"
+  }
+}
