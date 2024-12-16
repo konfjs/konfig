@@ -1,2 +1,3 @@
 # konfig
-Code-driven repository management for the long term
+
+Code-driven configuration management for maintainable, long-term projects.
