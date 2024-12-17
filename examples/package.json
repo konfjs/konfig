@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "konfig": "npx @konfig/core"
+  },
+  "devDependencies": {
+    "@konfig/core": "workspace:*"
+  }
+}
