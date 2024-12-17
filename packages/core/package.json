@@ -1,5 +1,5 @@
 {
-  "name": "@konfig/cli",
+  "name": "@konfig/core",
   "version": "0.0.1",
   "author": {
     "name": "konfjs",
@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/konfjs/konfig.git",
-    "directory": "packages/cli"
+    "directory": "packages/core"
   },
   "bugs": {
     "url": "https://github.com/konfjs/konfig/issues"
@@ -33,7 +33,7 @@
     }
   },
   "bin": {
-    "@konfig/cli": "./dist/index.js"
+    "@konfig/core": "./dist/index.js"
   },
   "scripts": {
     "lint": "biome lint",
