@@ -3,14 +3,16 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "lint": "markdownlint-cli2 '**/*.md' '!node_modules'"
   },
   "dependencies": {
     "@astrojs/starlight": "0.31.1",
     "astro": "5.2.5",
     "sharp": "0.33.5"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.17.2"
   }
 }

@@ -1,0 +1,8 @@
+line-length: false
+no-inline-html: false
+blanks-around-headings:
+  lines_above: 1
+  lines_below: 0
+blanks-around-lists: false
+no-duplicate-heading:
+  siblings_only: true
