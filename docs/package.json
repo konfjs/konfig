@@ -1,0 +1,16 @@
+{
+  "name": "@konfig/docs",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "0.31.1",
+    "astro": "5.2.5",
+    "sharp": "0.33.5"
+  }
+}
