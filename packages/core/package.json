@@ -1,6 +1,6 @@
 {
   "name": "@konfig/core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "konfjs",
     "url": "https://github.com/konfjs"
@@ -15,7 +15,12 @@
   "bugs": {
     "url": "https://github.com/konfjs/konfig/issues"
   },
-  "keywords": ["konfjs", "konfig", "projen", "cli"],
+  "keywords": [
+    "konfjs",
+    "konfig",
+    "projen",
+    "cli"
+  ],
   "publishConfig": {
     "access": "public",
     "exports": {
@@ -41,7 +46,9 @@
     "build": "rm -rf dist && tsc && pnpm run add_shebang && chmod +x dist/index.js",
     "prepack": "pnpm run build"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "typescript": "5.8.2"
   },
